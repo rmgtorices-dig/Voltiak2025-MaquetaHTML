@@ -1,0 +1,17 @@
+# macOS specific files
+.DS_Store
+.localized
+._*
+
+# Windows specific files
+Thumbs.db
+Desktop.ini
+
+# Dependencies
+node_modules/
+
+# Build artifacts and temporary files
+/build
+/dist
+*.log
+*.tmp
