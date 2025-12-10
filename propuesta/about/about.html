@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Voltiak</title>
+    <meta name="description" content="About Voltiak">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            });
+    </script>
+
+    <main class="about-main">
+        <div class="about-container">
+            <h1 class="about-title">
+                About
+            </h1>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('../footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+</body>
+</html>
+

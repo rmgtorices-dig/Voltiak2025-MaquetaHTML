@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106" height="106" viewBox="0 0 106 106">
+  <defs>
+    <filter id="Elipse_14" x="0" y="0" width="106" height="106" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#9f9f9f" flood-opacity="0.365"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_3500" data-name="Grupo 3500" transform="translate(-377 -1768)">
+    <g transform="matrix(1, 0, 0, 1, 377, 1768)" filter="url(#Elipse_14)">
+      <circle id="Elipse_14-2" data-name="Elipse 14" cx="23" cy="23" r="23" transform="translate(26 26)" fill="#1e1a1d"/>
+    </g>
+    <g id="Icon_akar-shopping-bag" data-name="Icon akar-shopping-bag" transform="translate(414.624 1805)">
+      <path id="Trazado_512" data-name="Trazado 512" d="M5.358,13.38A1.5,1.5,0,0,1,6.854,12H15.9a1.5,1.5,0,0,1,1.5,1.38l.6,7.5A1.5,1.5,0,0,1,16.5,22.5H6.251a1.5,1.5,0,0,1-1.495-1.62Z" transform="translate(0 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_513" data-name="Trazado 513" d="M18,9.75V6a3,3,0,0,0-3-3h0a3,3,0,0,0-3,3V9.75" transform="translate(-3.624)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

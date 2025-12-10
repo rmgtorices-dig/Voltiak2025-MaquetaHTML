@@ -1,0 +1,192 @@
+.store-main {
+	/* @apply min-h-screen bg-white pt-24 md:pt-40 pb-16; */
+    min-height: 100vh;
+    background-color: white;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    @media (min-width: 768px) {
+        padding-top: 10rem;
+    }
+}
+
+.store-container {
+	/* @apply max-w-7xl mx-auto px-4 md:px-8; */
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media (min-width: 768px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.store-title {
+	/* @apply text-4xl md:text-6xl font-bold text-[#05192d] mb-8 md:mb-12 font-family-HelveticaNeue; */
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #05192d;
+    margin-bottom: 2rem;
+    font-family: HelveticaNeue, sans-serif;
+    @media (min-width: 768px) {
+        font-size: 3.75rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.store-filters {
+	/* @apply flex gap-3 md:gap-4 mb-8 md:mb-12 overflow-x-auto pb-2 md:pb-0; */
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    @media (min-width: 768px) {
+        gap: 1rem;
+        margin-bottom: 3rem;
+        padding-bottom: 0;
+    }
+}
+
+.store-filter-btn {
+	/* @apply px-6 py-2 md:px-8 md:py-3 rounded-full text-sm md:text-base font-medium font-family-HelveticaNeue whitespace-nowrap transition-all; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: HelveticaNeue, sans-serif;
+    white-space: nowrap;
+    transition: all 0.2s;
+    @media (min-width: 768px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        font-size: 1rem;
+    }
+}
+
+.store-filter-btn-active {
+	/* @apply bg-[#05192d] text-white; */
+    background-color: #05192d;
+    color: white;
+}
+
+.store-filter-btn-inactive {
+	/* @apply bg-gray-200 text-[#05192d] hover:bg-gray-300; */
+    background-color: #e5e7eb;
+    color: #05192d;
+    transition: background-color 0.2s;
+}
+
+.store-filter-btn-inactive:hover {
+    background-color: #d1d5db;
+}
+
+.store-products-grid {
+	/* @apply grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+.store-product-card {
+	/* @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow; */
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.store-product-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.store-product-image-wrapper {
+	/* @apply relative aspect-square bg-gray-100; */
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-color: #f3f4f6;
+}
+
+.store-product-image {
+	/* @apply w-full h-full object-cover; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.store-product-cart-btn {
+	/* @apply absolute top-2 right-2 md:top-4 md:right-4 w-8 h-8 md:w-10 md:h-10 bg-[#05192d] rounded-full flex items-center justify-center hover:bg-[#0a2540] transition-colors; */
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #05192d;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    @media (min-width: 768px) {
+        top: 1rem;
+        right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.store-product-cart-btn:hover {
+    background-color: #0a2540;
+}
+
+.store-product-cart-btn svg {
+	/* @apply md:w-5 md:h-5; */
+    width: 16px;
+    height: 16px;
+    @media (min-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.store-product-content {
+	/* @apply p-3 md:p-4; */
+    padding: 0.75rem;
+    @media (min-width: 768px) {
+        padding: 1rem;
+    }
+}
+
+.store-product-category {
+	/* @apply text-xs md:text-sm text-gray-600 mb-1 font-family-HelveticaNeue; */
+    font-size: 0.75rem;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+    font-family: HelveticaNeue, sans-serif;
+    @media (min-width: 768px) {
+        font-size: 0.875rem;
+    }
+}
+
+.store-product-name {
+	/* @apply font-semibold text-sm md:text-base text-[#05192d] mb-2 font-family-HelveticaNeue; */
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #05192d;
+    margin-bottom: 0.5rem;
+    font-family: HelveticaNeue, sans-serif;
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+}

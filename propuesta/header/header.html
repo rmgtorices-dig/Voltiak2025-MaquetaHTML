@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Header - Voltiak</title>
+	<link rel="stylesheet" href="../global.css">
+	<link rel="stylesheet" href="header.css">
+</head>
+<body>
+<header>
+	<section class="header">
+		<nav class="header-nav">
+			<div class="header-mobile-menu-wrapper">
+				<!-- Sandwich menu -->
+				<button
+					id="mobile-menu-toggle"
+					class="header-menu-toggle"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<!-- Icono hamburguesa -->
+						<path
+							data-hamburger
+							d="M3 18H21M3 12H21M3 6H21"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						></path>
+						<!-- Icono X (oculto por defecto) -->
+						<path
+							data-close
+							d="M18 6L6 18M6 6L18 18"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							style="display: none;"
+						></path>
+					</svg>
+				</button>
+				<button class="header-logo-placeholder">
+					<span>V</span>
+				</button>
+			</div>
+			<div class="header-logo-container">
+				<a href="/" class="flex flex-col items-center">
+					<div class="flex items-center gap-[-1px]">
+						<span
+							class="text-[48px] text-[#05192d] font-family-HelveticaNeue mt-[-2px]"
+						>Voltiak</span>
+					</div>
+					<span class="text-[11px] text-[#05192d] font-family-HelveticaNeue mt-[-8px] md:mt-[-12px] text-center"
+					>Innovación en movimiento</span>
+				</a>
+			</div>
+			<div class="header-nav-links">
+				<a
+					href="/store"
+					class="header-link header-link-base"
+				>Tienda</a>
+				<a
+					href="/about"
+					class="header-link header-link-base"
+				>Nuestra Compañía</a>
+				<a
+					href="/blog"
+					class="header-link header-link-base"
+				>Blog</a>
+				<a
+					href="/contact"
+					class="header-link header-link-base"
+				>Contacto</a>
+			</div>
+			<div class="header-social-links">
+				<!-- Lupa de buscar -->
+				<button class="header-icon-button">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+				</button>
+				<!-- bolsa de compras -->
+				<a
+					href="/cart"
+					class="header-cart-link"
+				>
+					<svg
+						width="48"
+						height="48"
+						viewBox="0 0 48 48"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<!-- Círculo de fondo azul oscuro centrado -->
+						<circle cx="24" cy="24" r="24" fill="#05192d"></circle>
+						<!-- Icono de bolsa de compras centrado -->
+						<g transform="translate(12, 12)">
+							<path
+								d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+								stroke="#fff"
+								stroke-width="2.5"
+								fill="none"></path>
+							<path
+								d="M9 6V5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5V6"
+								stroke="#fff"
+								stroke-width="2.5"
+								stroke-linecap="round"
+								fill="none"></path>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</nav>
+	</section>
+	<!-- Mobile Menu -->
+	<div id="mobile-menu" class="mobile-menu" style="display: none;">
+		<nav class="mobile-menu-nav">
+			<div class="mobile-menu-item">
+				<button
+					id="tienda-toggle"
+					class="mobile-menu-button"
+				>
+					<span>Tienda</span>
+					<svg
+						width="16"
+						height="16"
+						viewBox="0 0 16 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="mobile-menu-arrow"
+					>
+						<path
+							d="M4 6L8 10L12 6"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</button>
+				<div id="tienda-submenu" class="mobile-menu-submenu" style="display: none;">
+					<a
+						href="/store?filter=ventiladores-industriales"
+						class="mobile-menu-submenu-link"
+					>
+						Ventiladores Industriales
+					</a>
+					<a
+						href="/store?filter=ventiladores-evaporativos"
+						class="mobile-menu-submenu-link"
+					>
+						Ventiladores Evaporativos
+					</a>
+				</div>
+			</div>
+			<a
+				href="/about"
+				class="mobile-menu-link"
+			>
+				Nuestra Compañía
+			</a>
+			<a
+				href="/blog"
+				class="mobile-menu-link"
+			>
+				Blog
+			</a>
+			<a
+				href="/contact"
+				class="mobile-menu-link"
+			>
+				Contacto
+			</a>
+		</nav>
+	</div>
+</header>
+
+<script>
+	// Mobile Menu functionality
+	(function() {
+		const toggleButton = document.getElementById('mobile-menu-toggle');
+		const mobileMenu = document.getElementById('mobile-menu');
+		const hamburgerPath = toggleButton?.querySelector('path[data-hamburger]');
+		const closePath = toggleButton?.querySelector('path[data-close]');
+		const tiendaToggle = document.getElementById('tienda-toggle');
+		const tiendaSubmenu = document.getElementById('tienda-submenu');
+		let isMenuOpen = false;
+		let isTiendaExpanded = false;
+
+		function toggleMenu() {
+			isMenuOpen = !isMenuOpen;
+			if (isMenuOpen) {
+				mobileMenu.style.display = 'block';
+				if (hamburgerPath) hamburgerPath.style.display = 'none';
+				if (closePath) closePath.style.display = 'block';
+				document.body.style.overflow = 'hidden';
+			} else {
+				mobileMenu.style.display = 'none';
+				if (hamburgerPath) hamburgerPath.style.display = 'block';
+				if (closePath) closePath.style.display = 'none';
+				document.body.style.overflow = '';
+				isTiendaExpanded = false;
+				tiendaSubmenu.style.display = 'none';
+			}
+		}
+
+		function toggleTienda() {
+			isTiendaExpanded = !isTiendaExpanded;
+			tiendaSubmenu.style.display = isTiendaExpanded ? 'block' : 'none';
+		}
+
+		if (toggleButton) {
+			toggleButton.addEventListener('click', toggleMenu);
+		}
+
+		if (tiendaToggle) {
+			tiendaToggle.addEventListener('click', toggleTienda);
+		}
+
+		// Cerrar menú al hacer clic en un enlace
+		const menuLinks = mobileMenu?.querySelectorAll('.mobile-menu-link, .mobile-menu-submenu-link');
+		menuLinks?.forEach(link => {
+			link.addEventListener('click', () => {
+				toggleMenu();
+			});
+		});
+	})();
+</script>
+

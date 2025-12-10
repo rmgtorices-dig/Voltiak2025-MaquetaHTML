@@ -1,0 +1,28 @@
+
+/* Css para quitar estilos predefinidos */
+
+html {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #05192d;
+    background-color: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

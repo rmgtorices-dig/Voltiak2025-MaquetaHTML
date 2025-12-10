@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Voltiak</title>
+    <meta name="description" content="Explora nuestra tienda de ventiladores industriales y evaporativos">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <!-- <Header /> -->
+    <main class="store-main">
+        <div class="store-container">
+            <!-- Título -->
+            <h1 class="store-title">
+                Tienda
+            </h1>
+
+            <!-- Filtros de categorías -->
+            <div class="store-filters">
+                <button
+                    data-filter="todos"
+                    class="filter-btn store-filter-btn store-filter-btn-active"
+                >
+                    Todos
+                </button>
+                <button
+                    data-filter="ventiladores-industriales"
+                    class="filter-btn store-filter-btn store-filter-btn-inactive"
+                >
+                    Ventiladores Industriales
+                </button>
+                <button
+                    data-filter="ventiladores-evaporativos"
+                    class="filter-btn store-filter-btn store-filter-btn-inactive"
+                >
+                    Ventiladores Evaporativos
+                </button>
+            </div>
+
+            <!-- Grid de productos -->
+            <div id="products-grid" class="store-products-grid">
+                <!-- Producto 1 -->
+                <a
+                    href="/store/airfree"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-industriales"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4030.png" 
+                            alt="AirFree"   
+                            class="store-product-image"
+                        />
+                        <!-- Icono de carrito -->
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Industriales
+                        </p>
+                        <h3 class="store-product-name">
+                            AirFree
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 2 -->
+                <a
+                    href="/store/notus"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-industriales"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4036.png"
+                            alt="Notus"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Industriales
+                        </p>
+                        <h3 class="store-product-name">
+                            Notus
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 3 -->
+                <a
+                    href="/store/classic-home"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-evaporativos"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/blog-placeholder-3.jpg"
+                            alt="Classic Home"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Evaporativos
+                        </p>
+                        <h3 class="store-product-name">
+                            Classic Home
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 4 -->
+                <a
+                    href="/store/aircool"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-industriales"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4030.png"
+                            alt="AirCool"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Industriales
+                        </p>
+                        <h3 class="store-product-name">
+                            AirCool
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 5 -->
+                <a
+                    href="/store/classic-r-xl"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-evaporativos"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/blog-placeholder-5.jpg"
+                            alt="Classic R XL"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Evaporativos
+                        </p>
+                        <h3 class="store-product-name">
+                            Classic R XL
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 6 -->
+                <a
+                    href="/store/eurus-iii"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-industriales"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4036.png"
+                            alt="Eurus III"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Industriales
+                        </p>
+                        <h3 class="store-product-name">
+                            Eurus III
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 7 -->
+                <a
+                    href="/store/aircool-2"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-industriales"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4030.png"
+                            alt="AirCool"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Industriales
+                        </p>
+                        <h3 class="store-product-name">
+                            AirCool
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 8 -->
+                <a
+                    href="/store/classic-r-xl-2"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-evaporativos"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/blog-placeholder-5.jpg"
+                            alt="Classic R XL"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Evaporativos
+                        </p>
+                        <h3 class="store-product-name">
+                            Classic R XL
+                        </h3>
+                    </div>
+                </a>
+                <!-- Producto 9 -->
+                <a
+                    href="/store/eurus-iii-2"
+                    class="product-card store-product-card"
+                    data-category="ventiladores-industriales"
+                >
+                    <div class="store-product-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4036.png"
+                            alt="Eurus III"
+                            class="store-product-image"
+                        />
+                        <button
+                            class="store-product-cart-btn"
+                            aria-label="Agregar al carrito"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3.74181 20.5545C4.94143 22 7.17414 22 11.6395 22H12.3607C16.8261 22 19.0589 22 20.2585 20.5545M3.74181 20.5545C2.54219 19.1091 2.95365 16.9146 3.77657 12.5257C4.36179 9.40452 4.65441 7.84393 5.7653 6.92196M3.74181 20.5545C3.74181 20.5545 3.74181 20.5545 3.74181 20.5545ZM20.2585 20.5545C21.4581 19.1091 21.0466 16.9146 20.2237 12.5257C19.6385 9.40452 19.3459 7.84393 18.235 6.92196M20.2585 20.5545C20.2585 20.5545 20.2585 20.5545 20.2585 20.5545ZM18.235 6.92196C17.1241 6 15.5363 6 12.3607 6H11.6395C8.46398 6 6.8762 6 5.7653 6.92196M18.235 6.92196C18.235 6.92196 18.235 6.92196 18.235 6.92196ZM5.7653 6.92196C5.7653 6.92196 5.7653 6.92196 5.7653 6.92196Z"
+                                    stroke="white"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="store-product-content">
+                        <p class="store-product-category">
+                            Ventiladores Industriales
+                        </p>
+                        <h3 class="store-product-name">
+                            Eurus III
+                        </h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <!-- <Footer /> -->
+
+    <script>
+        // Funcionalidad de filtros
+        (function () {
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const productCards = document.querySelectorAll(".product-card");
+            let currentFilter = "todos";
+
+            function updateFilter(selectedFilter) {
+                currentFilter = selectedFilter;
+
+                // Actualizar estilos de botones
+                filterButtons.forEach((btn) => {
+                    const filter = btn.getAttribute("data-filter");
+                    if (filter === selectedFilter) {
+                        btn.classList.remove("store-filter-btn-inactive");
+                        btn.classList.add("store-filter-btn-active");
+                    } else {
+                        btn.classList.remove("store-filter-btn-active");
+                        btn.classList.add("store-filter-btn-inactive");
+                    }
+                });
+
+                // Mostrar/ocultar productos
+                productCards.forEach((card) => {
+                    const category = card.getAttribute("data-category");
+                    if (selectedFilter === "todos" || category === selectedFilter) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            }
+
+            // Event listeners para los botones de filtro
+            filterButtons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const filter = btn.getAttribute("data-filter");
+                    if (filter) {
+                        updateFilter(filter);
+                    }
+                });
+            });
+
+            // Inicializar con "Todos"
+            updateFilter("todos");
+        })();
+    </script>
+</body>
+</html>

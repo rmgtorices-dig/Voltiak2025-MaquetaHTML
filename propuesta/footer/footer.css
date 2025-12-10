@@ -1,0 +1,119 @@
+.footer {
+	/* @apply py-12 px-4 bg-white text-[#05192d]; */
+    padding: 3rem 1rem;
+    background-color: white;
+    color: #05192d;
+}
+
+.footer-container {
+	/* @apply max-w-6xl mx-auto; */
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-grid {
+	/* @apply grid md:grid-cols-2 gap-8 md:gap-16; */
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4rem;
+    }
+}
+
+.footer-column-left {
+	/* @apply text-center md:text-left; */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-column-left {
+        text-align: left;
+    }
+}
+
+.footer-column-right {
+	/* @apply text-center md:text-right; */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-column-right {
+        text-align: right;
+    }
+}
+
+.footer-email {
+	/* @apply text-lg font-medium mb-2; */
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.footer-phone {
+	/* @apply text-lg font-medium mb-2; */
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.footer-text {
+	/* @apply text-sm text-gray-600 mb-2; */
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.footer-text-last {
+	/* @apply text-sm text-gray-600; */
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.footer-text-schedule {
+	/* @apply text-sm text-gray-600 mb-4; */
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.footer-social {
+	/* @apply flex justify-center md:justify-end gap-6 mb-4; */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-social {
+        justify-content: flex-end;
+    }
+}
+
+.footer-social-link {
+	/* @apply text-[#05192d] hover:text-[#0a2540] transition; */
+    color: #05192d;
+    transition: color 0.2s;
+}
+
+.footer-social-link:hover {
+    color: #0a2540;
+}
+
+.footer-policy-link {
+	/* @apply text-sm text-[#05192d] underline hover:text-[#0a2540]; */
+    font-size: 0.875rem;
+    color: #05192d;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.footer-policy-link:hover {
+    color: #0a2540;
+}
+

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirFree - Voltiak</title>
+    <meta name="description" content="Diseñado para mover grandes volúmenes de aire con el mínimo consumo">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="store-slug.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            });
+    </script>
+
+    <main class="product-main">
+        <!-- Hero Section -->
+        <section class="product-hero">
+            <div class="product-hero-container">
+                <div class="product-hero-grid">
+                    <div class="product-hero-content">
+                        <p class="product-subtitle">
+                            Tecnología y aerodinámica.
+                        </p>
+                        <h1 class="product-title">
+                            AirFree
+                        </h1>
+                        <div class="product-hero-buttons">
+                            <button class="product-btn product-btn-primary">
+                                Comprar
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 5V19M5 12H19"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <button class="product-btn product-btn-secondary">
+                                Descargar ficha técnica
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-hero-image-wrapper">
+                        <div class="product-hero-image-container">
+                            <img
+                                src="../imgs/Grupo 4030.png"
+                                alt="AirFree"
+                                class="product-hero-image"
+                            />
+                        </div>
+                        <div class="product-hero-blur"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description Section -->
+        <section class="product-description">
+            <div class="product-description-container">
+                <p class="product-description-text">
+                    Diseñado para mover grandes volúmenes de aire con el mínimo consumo, para que plantas, naves y espacios de alto rendimiento operen sin detenerse.
+                </p>
+            </div>
+        </section>
+
+        <!-- Efficiency Section -->
+        <section class="product-efficiency">
+            <div class="product-efficiency-container">
+                <h2 class="product-efficiency-title">
+                    Eficiencia que se siente.
+                </h2>
+                <div class="product-efficiency-content">
+                    <div class="product-efficiency-value">
+                        <span class="product-efficiency-number">
+                            888,000
+                        </span>
+                        <span class="product-efficiency-unit">
+                            M³/H
+                        </span>
+                    </div>
+                    <p class="product-efficiency-description">
+                        Flujo de aire para reducir sensación térmica y estabilizar el ambiente sin enfriamiento costoso.
+                    </p>
+                </div>
+                <div class="product-features-grid">
+                    <div class="product-feature-card">
+                        <div class="product-feature-icon">
+                            <svg
+                                width="48"
+                                height="48"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="product-feature-icon-thermometer"
+                            >
+                                <path
+                                    d="M14 4V2C14 1.44772 13.5523 1 13 1H11C10.4477 1 10 1.44772 10 2V4M14 4H10M14 4V6M10 4V6M6 8V20C6 21.1046 6.89543 22 8 22H16C17.1046 22 18 21.1046 18 20V8H6Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </div>
+                        <p class="product-feature-text">
+                            Baja velocidad, alto volumen, menos calor.
+                        </p>
+                    </div>
+                    <div class="product-feature-card">
+                        <div class="product-feature-icon">
+                            <svg
+                                width="48"
+                                height="48"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="product-feature-icon-battery"
+                            >
+                                <rect
+                                    x="2"
+                                    y="7"
+                                    width="18"
+                                    height="10"
+                                    rx="2"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                ></rect>
+                                <path
+                                    d="M20 11V13"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                ></path>
+                            </svg>
+                        </div>
+                        <p class="product-feature-text">
+                            Ahorro energético vs climatización tradicional.
+                        </p>
+                    </div>
+                    <div class="product-feature-card">
+                        <div class="product-feature-icon">
+                            <svg
+                                width="48"
+                                height="48"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="product-feature-icon-factory"
+                            >
+                                <path
+                                    d="M3 21H21M5 21V7L13 2V7M5 21L5 11H9M13 7V21M13 7L9 11V21M13 7L17 11V21M9 11H17"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </div>
+                        <p class="product-feature-text">
+                            Operación estable en espacios de gran escala.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motor Section -->
+        <section class="product-motor">
+            <div class="product-motor-container">
+                <div class="product-motor-grid">
+                    <div class="product-motor-content">
+                        <h2 class="product-motor-title">
+                            Motor PMSM sin escobillas
+                        </h2>
+                        <p class="product-motor-description">
+                            Control inteligente integrado y aerodinámica industrial de aspas extralargas para lograr un movimiento de aire continuo y sin mantenimiento frecuente, incluso en operación prolongada.
+                        </p>
+                    </div>
+                    <div class="product-motor-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4030.png"
+                            alt="Motor del ventilador"
+                            class="product-motor-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiet Operation Section -->
+        <section class="product-quiet">
+            <div class="product-quiet-container">
+                <h2 class="product-quiet-title">
+                    Potencia sin ruido.
+                </h2>
+                <div class="product-quiet-wave">
+                    <svg
+                        width="100%"
+                        height="60"
+                        viewBox="0 0 400 60"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-quiet-svg"
+                    >
+                        <path
+                            d="M0 30 Q100 10, 200 30 T400 30"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            fill="none"
+                        ></path>
+                        <path
+                            d="M0 30 Q100 50, 200 30 T400 30"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            fill="none"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="product-quiet-description">
+                    Flujo masivo de aire con un nivel sonoro inferior a 40 dB, casi imperceptible en operación.
+                </p>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="product-applications">
+            <div class="product-applications-container">
+                <h2 class="product-applications-title">
+                    Hecho para espacios que producen.
+                </h2>
+                <div class="product-applications-carousel-wrapper">
+                    <div id="applications-carousel" class="product-applications-carousel">
+                        <div class="product-application-card">
+                            <div class="product-application-image-container">
+                                <img
+                                    src="../imgs/blog-placeholder-3.jpg"
+                                    alt="Aeropuertos"
+                                    class="product-application-image"
+                                />
+                            </div>
+                            <div class="product-application-content">
+                                <h3 class="product-application-name">
+                                    Aeropuertos
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="product-application-card">
+                            <div class="product-application-image-container">
+                                <img
+                                    src="../imgs/blog-placeholder-3.jpg"
+                                    alt="Gimnasios"
+                                    class="product-application-image"
+                                />
+                            </div>
+                            <div class="product-application-content">
+                                <h3 class="product-application-name">
+                                    Gimnasios
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="product-application-card">
+                            <div class="product-application-image-container">
+                                <img
+                                    src="../imgs/blog-placeholder-3.jpg"
+                                    alt="Restaurantes"
+                                    class="product-application-image"
+                                />
+                            </div>
+                            <div class="product-application-content">
+                                <h3 class="product-application-name">
+                                    Restaurantes
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="product-application-card">
+                            <div class="product-application-image-container">
+                                <img
+                                    src="../imgs/blog-placeholder-3.jpg"
+                                    alt="Logística"
+                                    class="product-application-image"
+                                />
+                            </div>
+                            <div class="product-application-content">
+                                <h3 class="product-application-name">
+                                    Logística
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="product-faq">
+            <div class="product-faq-container">
+                <div class="product-faq-grid">
+                    <div class="product-faq-list">
+                        <div class="product-faq-item">
+                            <button class="product-faq-question" data-index="0">
+                                <span class="product-faq-question-text">
+                                    ¿La instalación es difícil?
+                                </span>
+                                <svg
+                                    class="product-faq-icon"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div class="product-faq-answer hidden">
+                                La instalación es sencilla y puede ser realizada por personal técnico calificado.
+                            </div>
+                        </div>
+                        <div class="product-faq-item">
+                            <button class="product-faq-question" data-index="1">
+                                <span class="product-faq-question-text">
+                                    ¿Se puede personalizar la altura o configuración?
+                                </span>
+                                <svg
+                                    class="product-faq-icon"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div class="product-faq-answer hidden">
+                                Sí, ofrecemos opciones de personalización según las necesidades del espacio.
+                            </div>
+                        </div>
+                        <div class="product-faq-item">
+                            <button class="product-faq-question" data-index="2">
+                                <span class="product-faq-question-text">
+                                    ¿Necesita mantenimiento?
+                                </span>
+                                <svg
+                                    class="product-faq-icon"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div class="product-faq-answer hidden">
+                                Requiere mantenimiento mínimo gracias a su diseño sin escobillas.
+                            </div>
+                        </div>
+                        <div class="product-faq-item">
+                            <button class="product-faq-question" data-index="3">
+                                <span class="product-faq-question-text">
+                                    ¿Por qué elegir un PMSM vs uno evaporativo?
+                                </span>
+                                <svg
+                                    class="product-faq-icon"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <div class="product-faq-answer hidden">
+                                Los motores PMSM ofrecen mayor eficiencia energética y menor mantenimiento comparado con sistemas evaporativos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-faq-image-wrapper">
+                        <img
+                            src="../imgs/Grupo 4030.png"
+                            alt="AirFree"
+                            class="product-faq-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Table -->
+        <section class="product-specs">
+            <div class="product-specs-container">
+                <h2 class="product-specs-title">
+                    Una serie, múltiples diámetros – misma precisión.
+                </h2>
+                <div class="product-specs-table-wrapper">
+                    <table class="product-specs-table">
+                        <thead>
+                            <tr class="product-specs-header-row">
+                                <th class="product-specs-header-cell product-specs-header-left">
+                                    Modelo
+                                </th>
+                                <th class="product-specs-header-cell product-specs-header-center">
+                                    D6AAA49
+                                </th>
+                                <th class="product-specs-header-cell product-specs-header-center">
+                                    D6AAA51
+                                </th>
+                                <th class="product-specs-header-cell product-specs-header-center">
+                                    D6AAA56
+                                </th>
+                                <th class="product-specs-header-cell product-specs-header-center">
+                                    D6AAA73
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="product-specs-row">
+                                <td class="product-specs-label">
+                                    Diámetro
+                                </td>
+                                <td class="product-specs-value">
+                                    4.9 m / 16 ft
+                                </td>
+                                <td class="product-specs-value">
+                                    5.1 m / 17 ft
+                                </td>
+                                <td class="product-specs-value">
+                                    5.6 m / 18 ft
+                                </td>
+                                <td class="product-specs-value">
+                                    7.3 m / 24 ft
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row product-specs-row-alt">
+                                <td class="product-specs-label">
+                                    Rango de velocidad
+                                </td>
+                                <td class="product-specs-value">
+                                    30-120 RPM
+                                </td>
+                                <td class="product-specs-value">
+                                    30-120 RPM
+                                </td>
+                                <td class="product-specs-value">
+                                    30-120 RPM
+                                </td>
+                                <td class="product-specs-value">
+                                    30-120 RPM
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row">
+                                <td class="product-specs-label">
+                                    Volumen máximo de aire
+                                </td>
+                                <td class="product-specs-value">
+                                    888,000 M³/H
+                                </td>
+                                <td class="product-specs-value">
+                                    950,000 M³/H
+                                </td>
+                                <td class="product-specs-value">
+                                    1,100,000 M³/H
+                                </td>
+                                <td class="product-specs-value">
+                                    1,500,000 M³/H
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row product-specs-row-alt">
+                                <td class="product-specs-label">
+                                    Motor
+                                </td>
+                                <td class="product-specs-value">
+                                    PMSM
+                                </td>
+                                <td class="product-specs-value">
+                                    PMSM
+                                </td>
+                                <td class="product-specs-value">
+                                    PMSM
+                                </td>
+                                <td class="product-specs-value">
+                                    PMSM
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row">
+                                <td class="product-specs-label">
+                                    Potencia de Motor
+                                </td>
+                                <td class="product-specs-value">
+                                    2.2 kW
+                                </td>
+                                <td class="product-specs-value">
+                                    2.5 kW
+                                </td>
+                                <td class="product-specs-value">
+                                    3.0 kW
+                                </td>
+                                <td class="product-specs-value">
+                                    4.0 kW
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row product-specs-row-alt">
+                                <td class="product-specs-label">
+                                    Voltaje
+                                </td>
+                                <td class="product-specs-value">
+                                    220 V / 3P
+                                </td>
+                                <td class="product-specs-value">
+                                    220 V / 3P
+                                </td>
+                                <td class="product-specs-value">
+                                    220 V / 3P
+                                </td>
+                                <td class="product-specs-value">
+                                    220 V / 3P
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row">
+                                <td class="product-specs-label">
+                                    Amperaje carga completa
+                                </td>
+                                <td class="product-specs-value">
+                                    6.5 A
+                                </td>
+                                <td class="product-specs-value">
+                                    7.2 A
+                                </td>
+                                <td class="product-specs-value">
+                                    8.5 A
+                                </td>
+                                <td class="product-specs-value">
+                                    11.0 A
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row product-specs-row-alt">
+                                <td class="product-specs-label">
+                                    Nivel de ruido
+                                </td>
+                                <td class="product-specs-value">
+                                    &lt; 40 dB
+                                </td>
+                                <td class="product-specs-value">
+                                    &lt; 40 dB
+                                </td>
+                                <td class="product-specs-value">
+                                    &lt; 40 dB
+                                </td>
+                                <td class="product-specs-value">
+                                    &lt; 40 dB
+                                </td>
+                            </tr>
+                            <tr class="product-specs-row">
+                                <td class="product-specs-label">
+                                    Peso
+                                </td>
+                                <td class="product-specs-value">
+                                    85 kg
+                                </td>
+                                <td class="product-specs-value">
+                                    92 kg
+                                </td>
+                                <td class="product-specs-value">
+                                    105 kg
+                                </td>
+                                <td class="product-specs-value">
+                                    135 kg
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="product-specs-description">
+                    Elegí el diámetro según el volumen del espacio y el área de cobertura requerida. Todos con el mismo estándar industrial.
+                </p>
+            </div>
+        </section>
+
+        <!-- Model Selector and Downloads -->
+        <section class="product-downloads">
+            <div class="product-downloads-container">
+                <div class="product-downloads-card">
+                    <div class="product-downloads-selector">
+                        <select id="model-selector" class="product-model-selector">
+                            <option value="D6AAA49">D6AAA49</option>
+                            <option value="D6AAA51">D6AAA51</option>
+                            <option value="D6AAA56">D6AAA56</option>
+                            <option value="D6AAA73">D6AAA73</option>
+                        </select>
+                        <button class="product-downloads-buy-btn">
+                            Comprar
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 5V19M5 12H19"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-downloads-links">
+                        <a href="#" class="product-download-link">
+                            Ficha técnica (PDF)
+                        </a>
+                        <a href="#" class="product-download-link">
+                            Manual de instalación (PDF)
+                        </a>
+                        <a href="#" class="product-download-link">
+                            Descargar DWG's
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('../footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+
+    <script>
+        // FAQ Toggle functionality
+        (function () {
+            const faqQuestions = document.querySelectorAll(".product-faq-question");
+            faqQuestions.forEach((question) => {
+                question.addEventListener("click", () => {
+                    const faqItem = question.closest(".product-faq-item");
+                    const answer = faqItem?.querySelector(".product-faq-answer");
+                    const icon = question.querySelector(".product-faq-icon");
+
+                    if (answer && icon) {
+                        const isOpen = !answer.classList.contains("hidden");
+
+                        // Close all FAQs
+                        document
+                            .querySelectorAll(".product-faq-answer")
+                            .forEach((ans) => ans.classList.add("hidden"));
+                        document
+                            .querySelectorAll(".product-faq-icon")
+                            .forEach((ic) => {
+                                ic.style.transform = "rotate(0deg)";
+                            });
+
+                        // Toggle current FAQ
+                        if (!isOpen) {
+                            answer.classList.remove("hidden");
+                            icon.style.transform = "rotate(45deg)";
+                        }
+                    }
+                });
+            });
+        })();
+    </script>
+
+    <style>
+        .product-applications-carousel {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .product-applications-carousel::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</body>
+</html>
+

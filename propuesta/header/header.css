@@ -1,0 +1,302 @@
+.header {
+	/* @apply w-full md:w-full mx-auto md:h-[150px] md:py-[24.9px] ph-21 shadow-[0_3px_6px_0_rgba(0,0,0,0.08)] bg-white sticky top-0 left-0 z-30; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+    .header {
+        width: 100%;
+        height: 150px;
+        padding-top: 24.9px;
+        padding-bottom: 24.9px;
+    }
+}
+
+.header-nav {
+	/* @apply flex items-center justify-between px-4 md:px-21 sticky top-0 left-0 z-30; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        padding-left: 5.25rem;
+        padding-right: 5.25rem;
+    }
+}
+
+.header-mobile-menu-wrapper {
+	/* @apply flex items-center justify-between md:hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .header-mobile-menu-wrapper {
+        display: none;
+    }
+}
+
+.header-menu-toggle {
+	/* @apply w-10 h-10 text-black border-0 outline-none p-0 m-0 cursor-pointer relative; */
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    border: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-menu-toggle svg {
+	/* @apply absolute inset-0; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-logo-placeholder {
+	/* @apply w-10 h-10 text-black border-0 outline-none p-0 m-0 cursor-pointer color-transparent; */
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    border: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header-logo-placeholder span {
+	/* @apply text-[28px] font-bold font-family-HelveticaNeue text-transparent; */
+    font-size: 28px;
+    font-weight: 700;
+    font-family: HelveticaNeue, sans-serif;
+    color: transparent;
+}
+
+.header-logo-container {
+	/* @apply m-0; */
+    margin: 0;
+}
+
+.header-logo-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo-container .flex {
+    display: flex;
+    align-items: center;
+    gap: -1px;
+}
+
+.header-logo-container .text-\[48px\] {
+    font-size: 48px;
+    color: #05192d;
+    font-family: HelveticaNeue, sans-serif;
+    margin-top: -2px;
+}
+
+.header-logo-container .text-\[11px\] {
+    font-size: 11px;
+    color: #05192d;
+    font-family: HelveticaNeue, sans-serif;
+    margin-top: -8px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header-logo-container .text-\[11px\] {
+        margin-top: -12px;
+    }
+}
+
+.header-nav-links {
+	/* @apply hidden md:flex gap-8; */
+    display: none;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .header-nav-links {
+        display: flex;
+    }
+}
+
+.header-social-links {
+	/* @apply flex max-w-[60px] md:max-w-[100px] justify-center items-center gap-4 md:gap-12; */
+    display: flex;
+    max-width: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header-social-links {
+        max-width: 100px;
+        gap: 3rem;
+    }
+}
+
+.header-icon-button {
+	/* @apply w-10 h-10 text-black border-0 outline-none p-0 m-0 cursor-pointer; */
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    border: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header-cart-link {
+	/* @apply w-12 h-12 flex items-center justify-center border-0 outline-none p-0 m-0 cursor-pointer; */
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header-link {
+	/* @apply py-4 px-2 no-underline text-black border-b-4 border-transparent hover:text-accent; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.header-link:hover {
+    color: #05192d;
+}
+
+.header-link-active {
+	/* @apply !font-bold border-b-accent text-accent; */
+    font-weight: 700 !important;
+    border-bottom-color: #05192d;
+    color: #05192d;
+}
+
+.header-link-base {
+	/* @apply text-[17px] text-center text-[#011122] font-family-HelveticaNeue font-weight-medium mb-19.1 mt-2; */
+    font-size: 17px;
+    text-align: center;
+    color: #011122;
+    font-family: HelveticaNeue, sans-serif;
+    font-weight: 500;
+    margin-bottom: 19.1px;
+    margin-top: 0.5rem;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100%);
+    z-index: 50;
+    background-color: white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 60px;
+}
+
+.mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.mobile-menu-item {
+    width: 100%;
+    max-width: 28rem;
+}
+
+.mobile-menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: HelveticaNeue, sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-arrow {
+    transition: transform 0.3s;
+    margin-left: 0.5rem;
+}
+
+.mobile-menu-submenu {
+    text-align: center;
+}
+
+.mobile-menu-submenu-link {
+    display: block;
+    color: #2563eb;
+    font-size: 1rem;
+    font-family: HelveticaNeue, sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.mobile-menu-link {
+    width: 100%;
+    max-width: 28rem;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: HelveticaNeue, sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
