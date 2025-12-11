@@ -1,0 +1,32 @@
+/*
+En caso de contar con fuentes personalizadas agregar aquí, ya sea vinculando archivos o import de google font.
+*/
+@import url('css/colors.css?t=1'); 
+@import url('css/reset.css?t=1');
+
+/*Todo el trabajo de estilo Desktop será trabajado aquí*/
+/*Trabajaremos un override de clases si es necesario en los siguientes estilos cargadas por media querie
+1400px de ancho o más, todo lo que hay en style.css
+1280px a 1400px, todo lo que inclye en style y se hace override de lo que necesites aquí mismo.
+1279px a 1126px, todo lo que inclye en style y se hace override de lo que necesites aquí mismo.
+1125px a 1001px, todo lo que inclye en style y se hace override de lo que necesites aquí mismo. (Tablets resolución grande)
+1000px a 631px, todo lo que inclye en style y se hace override de lo que necesites aquí mismo. (Tablets resolución mediano)
+320px a 630px, todo lo que inclye en style y se hace override de lo que necesites aquí mismo. (Smartphones)
+
+Con esto evitamos anidar media queries en clases. En un futuro, si detectamos un problema sabemos exactamente donde intervenir (desktop, tablet o smartphone).
+*/
+
+/*Importante abrir comentarios para cualquier módulo que trabajes y cerrarlo. Ejemplo con Header*/
+
+/*General*/
+.center-block {
+	max-width: 1280px; /*Lienzo máximo de 1280px*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*General*/
+
+
+/*Header*/
+
+/*End Header*/

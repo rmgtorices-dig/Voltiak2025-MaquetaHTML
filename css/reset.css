@@ -1,0 +1,138 @@
+.clearall{
+	clear: both;
+}
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+*{
+	line-height: 1.3em;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14pt;
+	vertical-align: baseline;
+	font-weight: 400;
+	color: var(--main-text-color); 
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+figcaption {
+	display: none;
+}
+body {
+	line-height: 1;
+	overflow-x: hidden;
+	font-family: HelveticaNeue, sans-serif;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 700;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+	font-size: 18pt;
+}
+
+strong, b {
+	font-weight: bold;
+}
+strong i, b i{
+	font-weight: bold;
+	font-style: italic;
+}
+
+em, i {
+	font-style: italic;
+}
+
+u {
+	text-decoration: none;
+}
+
+s, del {
+	text-decoration: none;
+}
+
+mark {
+	background: none;
+	color: inherit;
+}
+
+small {
+	font-size: inherit;
+}
+
+sub, sup {
+	font-size: inherit;
+	vertical-align: baseline;
+}
+
+ul, ol {
+	list-style:disc;
+	margin: 20px 30px;
+	padding: 0;
+}
+
+blockquote {
+	margin: 10px auto;
+	max-width: 400px;
+	position: relative;
+	font-size: 11pt;
+	  font-style: italic;
+	  text-align: left;
+  }
+blockquote::after,
+blockquote::before {
+	color: #f2f2f2;
+	font-size: 5rem;
+	line-height: 0.8;
+}
+blockquote::after {
+	content: close-quote;
+	vertical-align: bottom;
+	position: absolute;
+	right: -15%;
+	bottom: -60px;
+}
+blockquote::before {
+	content: open-quote;
+	vertical-align: top;
+	position: absolute;
+	left: -20%;
+}
+.site-main{
+	z-index: 1;
+	position: relative;
+}
