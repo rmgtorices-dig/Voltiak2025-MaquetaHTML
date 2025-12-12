@@ -8,11 +8,12 @@
 	
     <link rel='stylesheet'href='style.css?ver=1' type='text/css' media='all' />
 
+	<link rel='stylesheet' media='screen and (min-width: 1400px) and (max-width: 2900px)' href='css/1400x2900px.css' />
 	<link rel='stylesheet' media='screen and (min-width: 1280px) and (max-width: 1400px)' href='css/1280x1400.css?t=1' />
 	<link rel='stylesheet' media='screen and (min-width: 1126px) and (max-width: 1279px)' href='css/1279x1126.css?t=1' />
 	<link rel='stylesheet' media='screen and (min-width: 1001px) and (max-width: 1125px)' href='css/1125x1001.css?t=1' />
 	<link rel='stylesheet' media='screen and (min-width: 631px) and (max-width: 1000px)' href='css/1000x631.css?t=1' />
-	<link rel='stylesheet' media='screen and (min-width: 320px) and (max-width: 630px)' href='css/630x320.css?t=1' />
+	<link rel='stylesheet' media='screen and (min-width: 320px) and (max-width: 630px)' href='./css/630x320.css?t=1' />
 	
 	</head>
 
@@ -29,7 +30,41 @@
     <main id="content" class="site-content site-content-tienda">
         <div class="block-sample">
             <div class="center-block">
-
+                <section class="store-main">
+                    <div class="store-container">
+                        <!-- Título -->
+                        <h1 class="store-title">
+                            Tienda
+                        </h1>
+            
+                        <!-- Filtros de categorías -->
+                        <div class="store-filters">
+                            <button
+                                data-filter="todos"
+                                class="filter-btn store-filter-btn store-filter-btn-active"
+                            >
+                                Todos
+                            </button>
+                            <button
+                                data-filter="ventiladores-industriales"
+                                class="filter-btn store-filter-btn store-filter-btn-inactive"
+                            >
+                                Ventiladores Industriales
+                            </button>
+                            <button
+                                data-filter="ventiladores-evaporativos"
+                                class="filter-btn store-filter-btn store-filter-btn-inactive"
+                            >
+                                Ventiladores Evaporativos
+                            </button>
+                        </div>
+            
+                        <!-- Grid de productos -->
+                        <div id="products-grid" class="store-products-grid">
+                            <!-- Los productos se cargarán dinámicamente desde tiendaProductos.js -->
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
@@ -45,5 +80,6 @@
     </footer>
 
     <script src="js/general.js?t=1"></script>
+    <script src="js/tiendaProductos.js"></script>
 </body>
 </html>
